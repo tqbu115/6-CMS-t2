@@ -1,0 +1,140 @@
+e="0x4010" />
+        <message message="$(string.event_0x4011)" value="0x4011" />
+        <message message="$(string.event_0x4012)" value="0x4012" />
+        <message message="$(string.event_0x4013)" value="0x4013" />
+        <message message="$(string.event_0x4015)" value="0x4015" />
+        <message message="$(string.event_0x4016)" value="0x4016" />
+        <message message="$(string.event_0x4017)" value="0x4017" />
+        <message message="$(string.event_0x4018)" value="0x4018" />
+        <message message="$(string.event_0x4019)" value="0x4019" />
+        <message message="$(string.event_0x401A)" value="0x401A" />
+        <message message="$(string.event_0x401B)" value="0x401B" />
+        <message message="$(string.event_0x401C)" value="0x401C" />
+        <message message="$(string.event_0x401D)" value="0x401D" />
+        <message message="$(string.event_0x4102)" value="0x4102" />
+        <message message="$(string.event_0x4103)" value="0x4103" />
+        <message message="$(string.event_0x4104)" value="0x4104" />
+        <message message="$(string.event_0x4105)" value="0x4105" />
+        <message message="$(string.event_0x4106)" value="0x4106" />
+        <message message="$(string.event_0x4107)" value="0x4107" />
+        <message message="$(string.event_0x4108)" value="0x4108" />
+        <message message="$(string.event_0x4109)" value="0x4109" />
+        <message message="$(string.event_0x410B)" value="0x410B" />
+        <message message="$(string.event_0x410C)" value="0x410C" />
+        <message message="$(string.event_0x410E)" value="0x410E" />
+        <message message="$(string.event_0x410F)" value="0x410F" />
+        <message message="$(string.event_0x4112)" value="0x4112" />
+        <message message="$(string.event_0x4227)" value="0x4227" />
+        <message message="$(string.event_0x4228)" value="0x4228" />
+        <message message="$(string.event_0x4229)" value="0x4229" />
+        <message message="$(string.msg_0x2000)" symbol="SAMP_USER_NAME_ADMIN" value="0x00002000" />
+        <message message="$(string.msg_0x2001)" symbol="SAMP_USER_NAME_GUEST" value="0x00002001" />
+        <message message="$(string.msg_0x2002)" symbol="SAMP_GROUP_NAME_ADMINS" value="0x00002002" />
+        <message message="$(string.msg_0x2003)" symbol="SAMP_GROUP_NAME_USERS" value="0x00002003" />
+        <message message="$(string.msg_0x2004)" symbol="SAMP_GROUP_NAME_NONE" value="0x00002004" />
+        <message message="$(string.msg_0x2005)" symbol="SAMP_ALIAS_NAME_ADMINS" value="0x00002005" />
+        <message message="$(string.msg_0x2006)" symbol="SAMP_ALIAS_NAME_SERVER_OPS" value="0x00002006" />
+        <message message="$(string.msg_0x2007)" symbol="SAMP_ALIAS_NAME_POWER_USERS" value="0x00002007" />
+        <message message="$(string.msg_0x2008)" symbol="SAMP_ALIAS_NAME_USERS" value="0x00002008" />
+        <message message="$(string.msg_0x2009)" symbol="SAMP_ALIAS_NAME_GUESTS" value="0x00002009" />
+        <message message="$(string.msg_0x200A)" symbol="SAMP_ALIAS_NAME_ACCOUNT_OPS" value="0x0000200A" />
+        <message message="$(string.msg_0x200B)" symbol="SAMP_ALIAS_NAME_PRINT_OPS" value="0x0000200B" />
+        <message message="$(string.msg_0x200C)" symbol="SAMP_ALIAS_NAME_BACKUP_OPS" value="0x0000200C" />
+        <message message="$(string.msg_0x200D)" symbol="SAMP_ALIAS_NAME_REPLICATOR" value="0x0000200D" />
+        <message message="$(string.msg_0x200E)" symbol="SAMP_GROUP_NAME_GUESTS" value="0x0000200E" />
+        <message message="$(string.msg_0x200F)" symbol="SAMP_NAME_CONFLICT_RDN" value="0x0000200F" />
+        <message message="$(string.msg_0x2010)" symbol="SAMP_USER_NAME_KRBTGT" value="0x00002010" />
+        <message message="$(string.msg_0x2011)" symbol="SAMP_GROUP_NAME_COMPUTERS" value="0x00002011" />
+        <message message="$(string.msg_0x2012)" symbol="SAMP_GROUP_NAME_CONTROLLERS" value="0x00002012" />
+        <message message="$(string.msg_0x2013)" symbol="SAMP_GROUP_NAME_SCHEMA_ADMINS" value="0x00002013" />
+        <message message="$(string.msg_0x2014)" symbol="SAMP_GROUP_NAME_CERT_ADMINS" value="0x00002014" />
+        <message message="$(string.msg_0x2015)" symbol="SAMP_GROUP_NAME_ENTERPRISE_ADMINS" value="0x00002015" />
+        <message message="$(string.msg_0x2016)" symbol="SAMP_ALIAS_NAME_RAS_SERVERS" value="0x00002016" />
+        <message message="$(string.msg_0x2017)" symbol="SAMP_GROUP_NAME_POLICY_ADMINS" value="0x00002017" />
+        <message message="$(string.msg_0x2018)" symbol="SAMP_ALIAS_NAME_PREW2KCOMPACCESS" value="0x00002018" />
+        <message message="$(string.msg_0x2019)" symbol="SAMP_WELL_KNOWN_ALIAS_EVERYONE" value="0x00002019" />
+        <message message="$(string.msg_0x201A)" symbol="SAMP_ALIAS_NAME_REMOTE_DESKTOP_USERS" value="0x0000201A" />
+        <message message="$(string.msg_0x201B)" symbol="SAMP_ALIAS_NAME_ADMINS_PERS" value="0x0000201B" />
+        <message message="$(string.msg_0x201C)" symbol="SAMP_WELL_KNOWN_ALIAS_ANONYMOUS_LOGON" value="0x0000201C" />
+        <message message="$(string.msg_0x201D)" symbol="SAMP_ALIAS_NAME_NETWORK_CONFIGURATION_OPS" value="0x0000201D" />
+        <message message="$(string.msg_0x201E)" symbol="SAMP_ALIAS_NAME_INCOMING_FOREST_TRUST_BUILDERS" value="0x0000201E" />
+        <message message="$(string.msg_0x201F)" symbol="SAMP_ALIAS_NAME_MONITORING_USERS" value="0x0000201F" />
+        <message message="$(string.msg_0x2020)" symbol="SAMP_ALIAS_NAME_LOGGING_USERS" value="0x00002020" />
+        <message message="$(string.msg_0x2021)" symbol="SAMP_ALIAS_NAME_AUTHORIZATIONACCESS" value="0x00002021" />
+        <message message="$(string.msg_0x2022)" symbol="SAMP_WELL_KNOWN_ALIAS_NETWORK_SERVICE" value="0x00002022" />
+        <message message="$(string.msg_0x2023)" symbol="SAMP_WELL_KNOWN_ALIAS_ENTERPRISE_DOMAIN_CONTROLLERS" value="0x00002023" />
+        <message message="$(string.msg_0x2024)" symbol="SAMP_ALIAS_NAME_TS_LICENSE_SERVERS" value="0x00002024" />
+        <message message="$(string.msg_0x2025)" symbol="SAMP_ALIAS_NAME_TRUSTED_INSTALLERS" value="0x00002025" />
+        <message message="$(string.msg_0x2026)" symbol="SAMP_ALIAS_NAME_DCOM_USERS" value="0x00002026" />
+        <message message="$(string.msg_0x2027)" symbol="SAMP_ALIAS_NAME_IUSERS" value="0x00002027" />
+        <message message="$(string.msg_0x202A)" symbol="SAMP_ALIAS_NAME_CRYPTO_OPERATORS" value="0x0000202A" />
+        <message message="$(string.msg_0x202B)" symbol="SAMP_WELL_KNOWN_IUSER_SID" value="0x0000202B" />
+        <message message="$(string.msg_0x202D)" symbol="SAMP_ALIAS_NAME_CACHEABLE_PRINCIPALS_GROUP" value="0x0000202D" />
+        <message message="$(string.msg_0x202E)" symbol="SAMP_ALIAS_NAME_NON_CACHEABLE_PRINCIPALS_GROUP" value="0x0000202E" />
+        <message message="$(string.msg_0x202F)" symbol="SAMP_GROUP_NAME_READONLY_CONTROLLERS" value="0x0000202F" />
+        <message message="$(string.msg_0x2030)" symbol="SAMP_GROUP_NAME_ENTERPRISE_READONLY_DOMAIN_CONTROLLERS" value="0x00002030" />
+        <message message="$(string.msg_0x2031)" symbol="SAMP_ALIAS_NAME_EVENT_LOG_READERS_GROUP" value="0x00002031" />
+        <message message="$(string.msg_0x2032)" symbol="SAMP_ALIAS_NAME_CERTSVC_DCOM_ACCESS_GROUP" value="0x00002032" />
+        <message message="$(string.msg_0x2100)" symbol="SAMP_USER_COMMENT_ADMIN" value="0x00002100" />
+        <message message="$(string.msg_0x2101)" symbol="SAMP_USER_COMMENT_GUEST" value="0x00002101" />
+        <message message="$(string.msg_0x2102)" symbol="SAMP_GROUP_COMMENT_ADMINS" value="0x00002102" />
+        <message message="$(string.msg_0x2103)" symbol="SAMP_GROUP_COMMENT_USERS" value="0x00002103" />
+        <message message="$(string.msg_0x2104)" symbol="SAMP_GROUP_COMMENT_NONE" value="0x00002104" />
+        <message message="$(string.msg_0x2105)" symbol="SAMP_ALIAS_COMMENT_ADMINS" value="0x00002105" />
+        <message message="$(string.msg_0x2106)" symbol="SAMP_ALIAS_COMMENT_SERVER_OPS" value="0x00002106" />
+        <message message="$(string.msg_0x2107)" symbol="SAMP_ALIAS_COMMENT_POWER_USERS" value="0x00002107" />
+        <message message="$(string.msg_0x2108)" symbol="SAMP_ALIAS_COMMENT_USERS" value="0x00002108" />
+        <message message="$(string.msg_0x2109)" symbol="SAMP_ALIAS_COMMENT_GUESTS" value="0x00002109" />
+        <message message="$(string.msg_0x210A)" symbol="SAMP_ALIAS_COMMENT_ACCOUNT_OPS" value="0x0000210A" />
+        <message message="$(string.msg_0x210B)" symbol="SAMP_ALIAS_COMMENT_PRINT_OPS" value="0x0000210B" />
+        <message message="$(string.msg_0x210C)" symbol="SAMP_ALIAS_COMMENT_BACKUP_OPS" value="0x0000210C" />
+        <message message="$(string.msg_0x210D)" symbol="SAMP_ALIAS_COMMENT_REPLICATOR" value="0x0000210D" />
+        <message message="$(string.msg_0x210E)" symbol="SAMP_GROUP_COMMENT_GUESTS" value="0x0000210E" />
+        <message message="$(string.msg_0x210F)" symbol="SAMP_USER_COMMENT_KRBTGT" value="0x0000210F" />
+        <message message="$(string.msg_0x2110)" symbol="SAMP_GROUP_COMMENT_COMPUTERS" value="0x00002110" />
+        <message message="$(string.msg_0x2111)" symbol="SAMP_GROUP_COMMENT_CONTROLLERS" value="0x00002111" />
+        <message message="$(string.msg_0x2112)" symbol="SAMP_GROUP_COMMENT_SCHEMA_ADMINS" value="0x00002112" />
+        <message message="$(string.msg_0x2113)" symbol="SAMP_GROUP_COMMENT_CERT_ADMINS" value="0x00002113" />
+        <message message="$(string.msg_0x2114)" symbol="SAMP_GROUP_COMMENT_ENTERPRISE_ADMINS" value="0x00002114" />
+        <message message="$(string.msg_0x2115)" symbol="SAMP_ALIAS_COMMENT_RAS_SERVERS" value="0x00002115" />
+        <message message="$(string.msg_0x2116)" symbol="SAMP_GROUP_COMMENT_POLICY_ADMINS" value="0x00002116" />
+        <message message="$(string.msg_0x2117)" symbol="SAMP_ALIAS_COMMENT_PREW2KCOMPACCESS" value="0x00002117" />
+        <message message="$(string.msg_0x2118)" symbol="SAMP_ALIAS_COMMENT_REMOTE_DESKTOP_USERS" value="0x00002118" />
+        <message message="$(string.msg_0x2120)" symbol="SAMP_ALIAS_COMMENT_TRUSTED_INSTALLERS" value="0x00002120" />
+        <message message="$(string.msg_0x2121)" symbol="SAMP_ALIAS_COMMENT_DCOM_USERS" value="0x00002121" />
+        <message message="$(string.msg_0x2122)" symbol="SAMP_ALIAS_COMMENT_IUSERS" value="0x00002122" />
+        <message message="$(string.msg_0x2125)" symbol="SAMP_ALIAS_COMMENT_CRYPTO_OPERATORS" value="0x00002125" />
+        <message message="$(string.msg_0x2129)" symbol="SAMP_GROUP_COMMENT_READONLY_CONTROLLERS" value="0x00002129" />
+        <message message="$(string.msg_0x2119)" symbol="SAMP_ALIAS_COMMENT_ADMINS_PERS" value="0x00002119" />
+        <message message="$(string.msg_0x211A)" symbol="SAMP_ALIAS_COMMENT_NETWORK_CONFIGURATION_OPS" value="0x0000211A" />
+        <message message="$(string.msg_0x211B)" symbol="SAMP_ALIAS_COMMENT_INCOMING_FOREST_TRUST_BUILDERS" value="0x0000211B" />
+        <message message="$(string.msg_0x211C)" symbol="SAMP_ALIAS_COMMENT_MONITORING_USERS" value="0x0000211C" />
+        <message message="$(string.msg_0x211D)" symbol="SAMP_ALIAS_COMMENT_LOGGING_USERS" value="0x0000211D" />
+        <message message="$(string.msg_0x211E)" symbol="SAMP_ALIAS_COMMENT_AUTHORIZATIONACCESS" value="0x0000211E" />
+        <message message="$(string.msg_0x211F)" symbol="SAMP_ALIAS_COMMENT_TS_LICENSE_SERVERS" value="0x0000211F" />
+        <message message="$(string.msg_0x2127)" symbol="SAMP_ALIAS_COMMENT_CACHEABLE_PRINCIPALS_GROUP" value="0x00002127" />
+        <message message="$(string.msg_0x2128)" symbol="SAMP_ALIAS_COMMENT_NON_CACHEABLE_PRINCIPALS_GROUP" value="0x00002128" />
+        <message message="$(string.msg_0x212A)" symbol="SAMP_ALIAS_COMMENT_EVENT_LOG_READERS_GROUP" value="0x0000212A" />
+        <message message="$(string.msg_0x212B)" symbol="SAMP_GROUP_COMMENT_ENTERPRISE_READONLY_DOMAIN_CONTROLLERS" value="0x0000212B" />
+        <message message="$(string.msg_0x212C)" symbol="SAMP_ALIAS_COMMENT_CERTSVC_DCOM_ACCESS_GROUP" value="0x0000212C" />
+        <message message="$(string.msg_0x400C)" symbol="SAMMSG_KRBTGT_RENAMED" value="0x0000400C" />
+        <message message="$(string.msg_0x4200)" symbol="SAMMSG_AUDIT_ENABLED_LOCAL_GROUP_TO_ENABLED_UNIVERSAL_GROUP" value="0x00004200" />
+        <message message="$(string.msg_0x4201)" symbol="SAMMSG_AUDIT_ENABLED_LOCAL_GROUP_TO_DISABLED_LOCAL_GROUP" value="0x00004201" />
+        <message message="$(string.msg_0x4202)" symbol="SAMMSG_AUDIT_ENABLED_LOCAL_GROUP_TO_DISABLED_UNIVERSAL_GROUP" value="0x00004202" />
+        <message message="$(string.msg_0x4203)" symbol="SAMMSG_AUDIT_ENABLED_GLOBAL_GROUP_TO_ENABLED_UNIVERSAL_GROUP" value="0x00004203" />
+        <message message="$(string.msg_0x4204)" symbol="SAMMSG_AUDIT_ENABLED_GLOBAL_GROUP_TO_DISABLED_GLOBAL_GROUP" value="0x00004204" />
+        <message message="$(string.msg_0x4205)" symbol="SAMMSG_AUDIT_ENABLED_GLOBAL_GROUP_TO_DISABLED_UNIVERSAL_GROUP" value="0x00004205" />
+        <message message="$(string.msg_0x4206)" symbol="SAMMSG_AUDIT_ENABLED_UNIVERSAL_GROUP_TO_ENABLED_LOCAL_GROUP" value="0x00004206" />
+        <message message="$(string.msg_0x4207)" symbol="SAMMSG_AUDIT_ENABLED_UNIVERSAL_GROUP_TO_ENABLED_GLOBAL_GROUP" value="0x00004207" />
+        <message message="$(string.msg_0x4208)" symbol="SAMMSG_AUDIT_ENABLED_UNIVERSAL_GROUP_TO_DISABLED_LOCAL_GROUP" value="0x00004208" />
+        <message message="$(string.msg_0x4209)" symbol="SAMMSG_AUDIT_ENABLED_UNIVERSAL_GROUP_TO_DISABLED_GLOBAL_GROUP" value="0x00004209" />
+        <message message="$(string.msg_0x420A)" symbol="SAMMSG_AUDIT_ENABLED_UNIVERSAL_GROUP_TO_DISABLED_UNIVERSAL_GROUP" value="0x0000420A" />
+        <message message="$(string.msg_0x420B)" symbol="SAMMSG_AUDIT_DISABLED_LOCAL_GROUP_TO_ENABLED_LOCAL_GROUP" value="0x0000420B" />
+        <message message="$(string.msg_0x420C)" symbol="SAMMSG_AUDIT_DISABLED_LOCAL_GROUP_TO_ENABLED_UNIVERSAL_GROUP" value="0x0000420C" />
+        <message message="$(string.msg_0x420D)" symbol="SAMMSG_AUDIT_DISABLED_LOCAL_GROUP_TO_DISABLED_UNIVERSAL_GROUP" value="0x0000420D" />
+        <message message="$(string.msg_0x420E)" symbol="SAMMSG_AUDIT_DISABLED_GLOBAL_GROUP_TO_ENABLED_GLOBAL_GROUP" value="0x0000420E" />
+        <message message="$(string.msg_0x420F)" symbol="SAMMSG_AUDIT_DISABLED_GLOBAL_GROUP_TO_ENABLED_UNIVERSAL_GROUP" value="0x0000420F" />
+        <message message="$(string.msg_0x4210)" symbol="SAMMSG_AUDIT_DISABLED_GLOBAL_GROUP_TO_DISABLED_UNIVERSAL_GROUP" value="0x00004210" />
+        <message message="$(string.msg_0x4211)" symbol="SAMMSG_AUDIT_DISABLED_UNIVERSAL_GROUP_TO_ENABLED_LOCAL_GROUP" value="0x00004211" />
+        <message message="$(string.msg_0x4212)" symbol="SAMMSG_AUDIT_DISABLED_UNIVERSAL_GROUP_TO_ENABLED_GLOBAL_GROUP" value="0x00004212" />
+        <message message="$(string.msg_0x4213)" symbol="SAMMSG_AUDIT_DISABLED_UNIVERSAL_GR

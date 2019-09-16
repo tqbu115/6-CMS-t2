@@ -1,0 +1,31 @@
+tem" level="win:Error" message="$(string.event_0x4233)" symbol="SAMMSG_INVALID_OID_TO_GROUP_LINK" template="T_0x4233" value="0x4233" />
+          <event channel="System" level="win:Error" message="$(string.event_0x4234)" symbol="SAMMSG_MAPPED_GROUP_MODIFICATION_FAILED" template="T_0x4234" value="0x4234" />
+          <event channel="System" level="win:Error" message="$(string.event_0x4235)" symbol="SAMMSG_CANNOT_LINK_OID_TO_GROUP" template="T_0x4235" value="0x4235" />
+          <event channel="System" level="win:Informational" message="$(string.event_0x4242)" symbol="SAMMSG_RESTRICT_REMOTE_SAM_DEFAULT_SD" template="T_0x4242" value="0x4242" />
+          <event channel="System" level="win:Informational" message="$(string.event_0x4243)" symbol="SAMMSG_RESTRICT_REMOTE_SAM_REGISTRY_SD" template="T_0x4243" value="0x4243" />
+          <event channel="System" level="win:Warning" message="$(string.event_0x4244)" symbol="SAMMSG_RESTRICT_REMOTE_SAM_REGISTRY_SD_MALFORMED" template="T_0x4244" value="0x4244" />
+          <event channel="System" level="win:Warning" message="$(string.event_0x4245)" symbol="SAMMSG_REMOTE_SAM_ACCESS_DENIED" template="T_0x4245" value="0x4245" />
+          <event channel="System" level="win:Informational" message="$(string.event_0x4246)" symbol="SAMMSG_REMOTE_SAM_AUDIT_MODE_ENABLED" template="T_0x4246" value="0x4246" />
+          <event channel="System" level="win:Informational" message="$(string.event_0x4247)" symbol="SAMMSG_REMOTE_SAM_AUDIT_MODE_DISABLED" template="T_0x4247" value="0x4247" />
+          <event channel="System" level="win:Warning" message="$(string.event_0x4248)" symbol="SAMMSG_REMOTE_SAM_AUDIT_MODE_ENABLED_ACCESS_NOT_DENIED" template="T_0x4248" value="0x4248" />
+          <event channel="System" level="win:Warning" message="$(string.event_0x4249)" symbol="SAMMSG_REMOTE_SAM_SUPPRESSED_MESSAGE_COUNTER" template="T_0x4249" value="0x4249" />
+        </events>
+      </provider>
+      <messageTable>
+        <message message="$(string.event_0x3000)" value="0x3000" />
+        <message message="$(string.event_0x3001)" value="0x3001" />
+        <message message="$(string.event_0x3003)" value="0x3003" />
+        <message message="$(string.event_0x3005)" value="0x3005" />
+        <message message="$(string.event_0x3006)" value="0x3006" />
+        <message message="$(string.event_0x3007)" value="0x3007" />
+        <message message="$(string.event_0x3008)" value="0x3008" />
+        <message message="$(string.event_0x3009)" value="0x3009" />
+        <message message="$(string.event_0x300A)" value="0x300A" />
+        <message message="$(string.event_0x300B)" value="0x300B" />
+        <message message="$(string.event_0x300C)" value="0x300C" />
+        <message message="$(string.event_0x300D)" value="0x300D" />
+        <message message="$(string.event_0x300E)" value="0x300E" />
+        <message message="$(string.event_0x300F)" value="0x300F" />
+        <message message="$(string.event_0x3010)" value="0x3010" />
+        <message message="$(string.event_0x3011)" value="0x3011" />
+        <message message="$(string.ev

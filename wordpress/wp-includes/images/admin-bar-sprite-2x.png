@@ -1,0 +1,22 @@
+"SAMMSG_AUDIT_DOMAIN_POLICY_CHANGE_SERVERROLE" value="0x00004220" />
+        <message message="$(string.msg_0x4221)" symbol="SAMMSG_AUDIT_DOMAIN_POLICY_CHANGE_STATE" value="0x00004221" />
+        <message message="$(string.msg_0x4222)" symbol="SAMMSG_AUDIT_DOMAIN_POLICY_CHANGE_LOCKOUT" value="0x00004222" />
+        <message message="$(string.msg_0x4223)" symbol="SAMMSG_AUDIT_DOMAIN_POLICY_CHANGE_MODIFIED" value="0x00004223" />
+        <message message="$(string.msg_0x4224)" symbol="SAMMSG_AUDIT_DOMAIN_POLICY_CHANGE_DOMAINMODE" value="0x00004224" />
+        <message message="$(string.msg_0x4225)" symbol="SAMMSG_AUDIT_BASIC_TO_QUERY_GROUP" value="0x00004225" />
+        <message message="$(string.msg_0x4226)" symbol="SAMMSG_AUDIT_QUERY_TO_BASIC_GROUP" value="0x00004226" />
+      </messageTable>
+    </events>
+  </instrumentation>
+  <mof xmlns="urn:schemas-microsoft-com:asm.v3" name="$(runtime.wbem)\samsrv.mof" />
+  <configuration xmlns="urn:schemas-microsoft-com:asm.v3" xmlns:asmv2="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+    <configurationSchema>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="Microsoft-Windows-Directory-Services-SAM" targetNamespace="Microsoft-Windows-Directory-Services-SAM">
+        <xsd:element name="SamReplicatePasswordsUrgently" type="xsd:boolean" wcm:description="Configures system to replicate password deltas urgently within a site" wcm:displayName="SamReplicatePasswordsUrgently" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+        <xsd:element name="SamDisableSingleObjectRepl" type="xsd:boolean" wcm:description="Configures system to not replication down updated information from the PDC during logon failures" wcm:displayName="SamDisableSingleObjectRepl" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+        <xsd:element name="IgnoreGCFailures" type="xsd:boolean" wcm:description="Configures system to not fail logons if no GC is present" wcm:displayName="IgnoreGCFailures" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+        <xsd:element default="true" name="NoLmHash" type="xsd:boolean" wcm:description="Configures system to not store LM hash of password." wcm:displayName="NoLmHash" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+        <xsd:element name="SamNoGcLogonEnforceNTLMCheck" type="xsd:boolean" wcm:description="Configures system to user NTLM logon information to determine site membership for the no GC logon configuration." wcm:displayName="SamNoGcLogonEnforceNTLMCheck" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+        <xsd:element name="SamNoGcLogonEnforceKerberosIpCheck" type="xsd:boolean" wcm:description="Configures system user Kerberos logon information to determine site membership for the no GC logon configuration" wcm:displayName="SamNoGcLogonEnforceKerberosIpCheck" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+        <xsd:element name="ForceGuest" type="xsd:boolean" wcm:description="Configures system such that network authentication is always in the Guest account context" wcm:displayName="ForceGuest" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa')" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:subScope="machineIndependent" />
+        <xsd:element name="Sam
