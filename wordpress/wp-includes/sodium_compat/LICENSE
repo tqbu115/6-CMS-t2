@@ -1,2 +1,21 @@
-öèvûUzÜÛ	û½ùpvR×ïHçuxáØGØ¿7¨¾qÞûÏ
-ûÛ%û*È„ýÃÂþÝ.çïÂ~Í)‚”ì«ââ¾Nø v‚ûŒ@ï>¨w‰ò/gxóa}DÿÛÞžü#Já:”¡ö¡boÇ×DÿíRô_~>¬AŠ»Å§|X›El±sˆ X¼ú°‰W/}Xñê‘ãõUõ·9‡Àó<ŸÀsc°ò…ÁûíDM­S.$ð¼žä*d>‘¿çÅØ]EäG_ÿöøS­‹V|‘:F§êïXy ªüFµ}S1¦µŒçx¾¦Öe§¾EV¶S¡Ëfx¶?Ö·–|x²o1ð-f¾EVÏ4EŒ†G¾-À¯í)GøEŒ†?+ní…·Þ7‡XQ„¿%êiDøïDz%ÂKE;/E8¬{%Â¿õoAø$‘þ	Â¯õÜˆpˆ)vÂWøí÷¾ŒW£8Ì€_*ò?‡ð—þÂ/ø;?IÜòŸ#|„ÀGèN|æÿþœw„×	|!Â«~!ÂAcÔŒðEÿw#b•]px?]‹pÐ)ßðq¼"ôû¯!üÏÐŸ‡ûa›Ï‰×Âa&É? \´Ýoõü+Â?é^ ŽëS„ß.êùá»á:ð;ñ_<á>QÿH„)Ò¥ÿ‘®D8Ì«B8\ßùÕý°á°Þ6„Ãxé6„ùïCx‰ÈÿÂ_ýõ„_íÓ×¯Ölü	å‡óþ5ªÿa7)`ç—G-§œõÃótÊõ—œõ?(ìM“òËš–‹Pý0ßdÊõ¯Bõ¿/ðk±ŸnExNœ±rà™Màx´³€À‹>Xs¾§pÿW#<½0¾\SŸ—n¿á0~Ú¡©Ï×.„ƒÝ»	üM}'ðç>X¡™	yÐÌ'ú³ˆ8.¯×Ã`…]¹þ|¢?‡vGÇ»’˜×r¥®¶{£®®ŸÒüLü?ö®:ª"K¿zÝtH“t BÂo”	¿= € å?ŒH“ni’˜t”q$þÈ(êq„utÅ=þŽ«¢£nwFÖ?ô(‹³sf@Ç•™õ ŒÊ8ºì«zuûÕ»¯nÒ	²Çaés¯¾wëÞ[?¯ª^½[÷*¸Ê§RÁU>ñÆæêÁ™Îl„ÊÊÊäUú6B‡{{m„¸/¤ÉUæçGâ
+/*
+ * ISC License
+ *
+ * Copyright (c) 2016-2018
+ * Paragon Initiative Enterprises <security at paragonie dot com>
+ *
+ * Copyright (c) 2013-2018
+ * Frank Denis <j at pureftpd dot org>
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */

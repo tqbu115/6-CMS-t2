@@ -675,56 +675,392 @@ wp.customize.selectiveRefresh = ( function( $, api ) {
 	/**
 	 * Timeout ID for the current requesr, or null if no request is current.
 	 *
-	 * @since Ì»ïÕßíÝeÞýlæÝ/gÞ}óî72ïþ÷Ì»ÿóî?eÞýæÝ÷àöîÇ0ï~6óî—1ïÞbÞý}Ì»”y÷;˜w¿y÷0ïþóî‡t{÷Ó˜w¿€y÷óîïeÞý&æÝw3ï~7óî2ïþŸÌ»ï[êöî'2ï~.óî}Ì»_Å¼û-Ì»y÷eÞýgÌ»÷r{÷˜W?”ñîÝÛ‘èähXµf,âõ)ãT¥­fIcUC]u^ÉÏ+ùy%?¯äç•ü¼’ŸWòóJ~^ÉÏ+ùy%?¯äç•ü¼’ŸWòóJþÿ‘’¯xmœ~Š×gF"âÞÏ‹ºâ­ZØàÅ½hLoÛØß…ýS¼‰K~Tñ¦­yƒFÜ+&3'wÈ›èÖQ¼5¡©Ý§x­žl«íXJ¶]‘D›xO?à1YÎ{(îÿ#Ï‰ÖKŸ·@Î‹‰^²O¡œ+¾\ºÿrÎXÄˆAéëk‘óÊr.YÄáÂ”›^Èþ¶"9×*"ÚŸÎÓ¦ÿ"ùÚ‰ÿK­Â™§íEú•HŸß“ÌÏ’‘a{Keÿóõ+–Ë=åJÇã§ý<ÒA§nvy¥ÛëNnÇPç5“:µRSéþ›€äëÆ™ÇE¿Ê¾Ž—_HŽG„ìñxî:¼¿ÇÃÇú½UïüÝï÷PK   ˆ~HT*ŒÔ  B  >  android-ndk-r11c/platforms/android-14/arch-arm/usr/lib/libm.soUT	 :üV:üVux [I  ˆ  íœ{pTÕÇÏ&Kò~‹¸V¤¡ÀfBŠ&
-(((Ò´a7»7Y¼û`÷FŠ6>*X õÝhQqŠ˜j•¶´¥Õ¶Œ…v¨Å¢-2èÐN±RÁŠÒïïž³ÙßýAÚ¿:{&¿ó;ŸsOî½ìÞ›ì9÷V^5ûê@  
-¥TU¨Õ vLEU¢ºÔ¨êŠm½U/Uf¶â ‰ ‰RÄ€@1ú+´-`‚—GB:ºôÑÛï­DLÕÑ
-^…(3ÛKÎ±½Õl§cÌ{Ç‰«s”2“oÀöOûþÊ|[ÞI¤*cÉt¥Lß’È½/:ÇiðïCî‡3ï<Ÿñ äfÆ#¯`<
-y=ã±È›W#og<	y7ã+è5g\‡|‚ñ5Èå‹<y8ãÈÆ‹‘ë7"×3N"ÛŒ3ôž0¾ùÆ_EÞÌx5]KŒïFÞËx-òaÆßD>ÅøÛÈ=ùäã­t-2~y&ãíÈ‹ÿ9ËøeävÆ»èºdü[äçÿy'ã? ïcüòÆ‡O3~—.åÁE>Š<’ñ{È€<›ñiä%ŒKqA:ŒËÁ÷2îî`L÷å6ÆCÁ¯0¾¼Ÿñ¥àcŒÇÒ0¤È5t¯3ž®`<<…ñLð\Æ³ÁqÆóÀ­Œ€×2^ÞÈ8~qxãøMÆyðqÆ­ààÐ"ßÂ¸<–ñð4ÆÀó?
-nf¼¼‚ñ³àõŒ·‚71~¼ñðnÆ/ƒ2~|‚ñpù°"¿Îx8Âx?¸Žñp=ã?ƒmÆï‚W1þ+øÆ'À›ÞÁ¸~ˆïeÜ|˜ñ ð)Æ#À=/`??Á!Æ•àÆÁ3O/f|%8Ëx¸ñõàG/ ?Çxx'ã(xc|„±>Í8î3¼ÈËÁ#ß	žÈø>ðlÆëÀK?v?
-¾—ñàÆOƒ·1Þ~…ñvð~Æ¿ c¼‡~	_Xä7À¿®`|<…ñ1ð\Æ'ÁqÆŸ€[—áCÅZÆ=À÷¿Àx0xãà7_
->Îx88‚ýþa<<–q-xãÙàùŒo73^^Á¸¼žq¼‰ñ
-ðvÆ«À»ß>Èxøã‡Áå¹<œñ“àãï‚ë?®gü}°ÍøEð*Æ??Àx'x3ã_w0ÞÞËø÷àÃŒ€O1>î*ò_À!ÆÇÀ5Œƒg2~¼˜ñIp–ñ?ÁíŒ?¡±ÓôçÁ¾ª\õ@#È¸Po×Iß;3Lð(p9cÕÐO6¥cI§Ø²ŠM[E3y·²ÜºY×€|2íVºÙ¬k€M»Uµ®u®›um©ÆXÎq+4IÛ­tíL¶ŽÞÙ°:[´1¯ÜsqOEŸI<—H¹•¥97ÝÊm¢jÍRT»•‹n•ªÒµ¥¬h,ïVºi++žL¹•åÖèH¦“NÂ$tÚ™LN×0$¥°¨ju+Ý¤-x¡¨²Üš:2q·BGŽÎÎ­-ÕMa'nÝÓÙtZàæ¶lÆÑµ¥’v¦)¦k¶ZÁ—¥–Vá)/KÙqw×n²•­aŽa›ƒØG±í\2í˜dQÎ´¤ã…ÜÙ]eš(ª"º¶Ü”Õµ1¥Ï5*½W³S³ÏÂ.ÍÝ„*K¥q	¥é¢Ae«t"š‹µÑ:[Ø’hu¢–ƒ)PgKw:™Û¢9ì)›¹ÂR¸0¢Ét#;[nç²–ŒI@Ú»>;}ræÜÌ©å£vL×–Nvº;;Ì0³¡ÐOÝ¸r“V²1Šý²6àÂ@Ð5­“e2}OÚ…f¥ïªü2Ü0TYŠî/÷Žro(}?9úuÌûéäZÒº6`«¶¾,ÕV…/¤4¾è>·qËnH¤ouÏ;P‰8nSl‹åóy'Š#c;Þ°d,Îc‚õ5š".1sÎˆËh^IsMšß nD\a¶WšLs±Çˆ*Ä—kÌ¶G4—ºñ›ÏN29cr‚æ ß2\brÒäéˆ6Ä\Ã4ßœMs@M—i¾‰é›ú"Js]Ä3ö~´«Ï"z›¾4b¼iß…xXéŸÅTnækˆu¦½ÑäÛ-¦}âr6~Šž¦¨Çß‰x
-ñ$âóüÊTOÐ\Ðl_­Î]ú²öÄJÍQS´èŽ¸Ï¬,gc49Âú¾`2>Þª9¦=a™öçO#¾ƒ yt“úß)žç¸¡¬=ÖäYcéŽñ#ŸAôB\Àúi]¥«iW F#Æt®UýûRŽè†¸Úðµ&×~Ê÷ÜÄÖ½¨2¹çyþ›i'lÚ´~B‹PøÈ¬®ÓËVÊ6Û–"®¤u(ÄÄ³—ÒâËf\«É·!F¹ŸK”Z†Hˆã~qb‘aúØAëA1ZC uÄõZó¡å¼¯›q˜Î«qJ¯»Õ+ýó¦Ak1÷#òˆ»ÅzÝB³GÅ¡ë}Û¸wÔ¶û©½×
-n{üðˆ3•oû}~Ÿßç÷ù}~Ÿßç÷ù}~Ÿßç÷ý'}Ê/~ñ‹_üâ¿øÅ/~ñ‹_üâ—ÿÃBÏE+úygóL®¹‡~®<>¨Ÿ+wôÖÏGÇõ*ôüšÆ|tæL&ðßxFmíäPÅŒënª	O
-UGª&DªªÇ‡*²¹D.a'¢ù=sšç©”1X5eìx¨*\E~ÁtzMDcIÑ¹O˜•*–ºú—	+QvÖáù9Õ{gèß5­ðà¯BÿÂM·”»ÏdÎ~ ¤Ìõ¸‡OçÊ=|z–Ë=|zþ¹Bxóë…7Ï=|ò¸‡O.÷ðéy-÷ðé™+÷ðÉÕ(Þ<÷ðé*÷ðÉ¨Þ<÷ðÉà>=§å>ùÜÃ'ßƒ{øäpŸüîáOy=ümÊëáÿPy=|òæ¹‡¿Gy=ü×”×Ã]y=üÊëáÓÂO»ðä¹‡Ly=üãÊëáÿCy=ü”×Ã§Ž{øÁ€×Ãïðzø½^Ÿ¼yîáx=ü‹…‡?Jxøc…‡_-<üË„‡¹ððk…‡ððo~½ðð„‡o	©ðð3ÂÃw„‡¿\xø«„‡—ðð×ƒðð~‡ððŸþ³ÂÃß*<ü—„‡ÿSááÿZxø{„‡¿OxøþÛÂÃ?"<ü£ÂÃÿ›ððÿ.<ü„‡ÿ¡ðð?~°Äëá÷(ñzøýJ¼þ%^ÿáá~ðð§¿Nxøs„‡¿@xø…‡¿DxøMÂÃO	ß~›ððW
-¿]xø÷	ƒððþFááoþáá?/<ü—„‡¿Cxø?þo„‡ÿºðð
-ÿ¨ððO
-ÿ#áá“4Å=üî¥^`©×Ã^êõðG
-´ðð+…‡?AxøS„‡_+<üYÂÃŸ+<üzááG…‡¿TxøË„‡ß&<üÕÂÃ¿_xø	ÿ	áá?#<ü-ÂÃÿðð$<üŸ	ÿ—ÂÃUxø{…‡¿OxøoÿOÂÃ?,<ü£ÂÃ_xø
-Ÿ> r¿kÐëáwz=ü^A¯‡ß7èõð½þ ×Ãn¼ú‚w?ZxøUÂ»Ÿ(¸NzøN*;.kG+“K…ÕÈ¨Wu7_7}Î¬ZßÒ÷-}ßÒ÷-ýó°ôUØÁë«Â™T*×+Œí*<ý†9á¨ãä’±'Ž·¥óNN…ñb&rYNgœD¸)Ý¦ùó¸[¹|2“ÖÃÚR*ÜÅ}LM%U8ßŒov¢1´
-¹-åf÷œÎ·Œ3ólú¨Àÿ&_ÎÁÉßïaÆÑZÅ´îÚ³˜¹?ÍÏÉS.5ãh‚‚Ö(äþæ›uŒ³vA±)Xü[‚ÂÿPø?ÊÌ\ž¢¾'_Ðe¡SjÖ èoø[UÑ*í}ßnöWZX;ˆœ{Í¡ÏÇ•«³ÛÕ|Oçn"ÚÇæû£˜ Š®:•Šˆö¿åþêcþä@ÕEŠN;?¿U|­¨d1nUwíÉwaïGJy]øã“•šuŽ÷£QŒ›4U;ßrÜ¿ PK
-     ˆ~H            ;  android-ndk-r11c/platforms/android-14/arch-arm/usr/include/UT	 :üVÉ
-üVux [I  ˆ  PK
-     n‚~H            C  android-ndk-r11c/platforms/android-14/arch-arm/usr/include/machine/UT	 üûVÉ
-üVux [I  ˆ  PK   n‚~Hjúˆbå  ù  I  android-ndk-r11c/platforms/android-14/arch-arm/usr/include/machine/ieee.hUT	 üûVüûVux [I  ˆ  ÅXmoâHþL~Ef¥	3$ÁW²+'±Dk›™îcp¼16g›0ÙÓþ÷{ªÛó23+ÝÎZMLwõSUOUW•÷ìCå§þBDm§Û¢@q:«½’vªQ£^??«7ÎêÕ/Zõ›Öùù‰7‹Èøº Ÿ*ÎŽÎpØÙîÙŸÕølC#íªuÞl]Ôiüû?×gqøˆ>P'^¼%Áó,£ãI•´››Fÿmb¯âÎÙâYDYJñ”2üFÁ«HÒ {ã•ŽÓ8‰ï”HC’H)%"É«ðOÂJÜYRO³•—Zy)ùâU„ñBø4~“Àx¾Xf"!ç-ÍÄ<%#z"!’ z¦ç$^.ÈË¨ç­MµEò"Bñ†•qœxYœ¼Ñ2òÑÕíN“8Êo’Qûžn´“ËKò"ŸAäF0†6Ÿ²xSË~x>¼Ì‚”•Ï=˜xaJs0Ä/N…—-á&Å	-S¡è)9É@óeš‘¤‹ÐS>Nã0ŒW|Ü›¼Dñ*þ³`Ð–bçIì/asMÂ¥/J¬í1¶
-ØD£ö]–
-GmãðŠÙ‘®”.œå•qy ¸ó´F« ›±Ëü7^fÒËØ¦ÁÄcŒ±¥‘ÌƒŒÙ…7¯Ï4Ï¹m
-?àC©,ÎÍ…$	¼cšÌ¾Ü¦IìÅl"2¶2*\{å­<•OgÁDÔT`Bà1ÌF­toÛ&(„^0	sD}C °ÄHaˆŠšøÙBÊËÉ'KÎ¯Úâc?)eêšx0.»!kžþ÷2Ïÿ3Ù×9Î,¨?ë'©töü”,H’-òæâ@E‹âÍ¶Ì¹]¬ÂW¸8Ì†, "ò±'˜ x43QxÆu.¼OSlä-¿I”.Ä„ïŽ|Á¾A‘ºKišMÖÒÓ!§ç~Ömƒð>°ûŸÌ®Ñ¥ö6²{ÃrÒ­.uú–k›í¡Û·úòEwpàý{Þ’•Îz"ã·m8õm2=8 ¶uË5§F¦Õé»¦u–‡.Y}—zæ£éBÌí×XíŸ¤þ=vç?õ¶Ù3Ý'iÐéZ¬îútè¶kv†=Ý¦ÁÐô‰Æ~uM§ÓÓÍG£‹ÎbZPLÆ'¸EÎƒÞëmù	¤-7ÛLÔÛ=‰%õÀÍ®i—ýÙ¼uÀ¬ëÕÈ“_Œß¸¢ÛOµÖ1~B›ŒÖÕõ{8wüZ’ÎÐ6Ù`áÛŽkºC× û~¿ë0àÃþdvç–z}G26tŒ”¸ºTÐ…m¼·‡Ž)‰3-×°íáÀ5ûV•úŸÁŒÕqº+Iî[ÒgÔ·Ÿ—ù1¨Ñçë6s*YÓ™ìu\F+IB+øtKÎ’eÜ÷L°Þ1x·Ï@ŸMÇ¨"d¦Ã¦ÒüY’>¥û,Ø¦^KÉ[“!%óŽôî'“Ï…‘Ž™'MÿŽ‘œaç!g?¿•¿¿«ª™§rié¸(Uº<Ó´39Á¬§%ˆÛ8ÅL‘ÊK>÷&3ü8ñ¦/u‰P¹ø&æu!ßŸ’i2—¦aŒ¢‹‚¶ˆƒ(;-ãw%°*Ëùe(c.¨ÝH( EŠ6+¾.âH(ö¥Â•€^ÔùúQcX‹k‰ìhŠuúJ¢_~¡:ü•ïü¨ÎøÀMZ¶RnI˜Á"4áBE…µŸ@õhxéGMfF±Â²TÁ„qü‚õ" fÊÏFUþàFÊò=^~h­ƒN´Æ%ã–˜€µu<L;'hI3/âŽ¨p¤\’=õÎ~ ¼ÿ±1°WÒVp½Æ†•Üª%fTäµû…Ê@Ê0X§Px>Gñ‘Är$òÌ5S´Ü~0[Å5‚4xÎL‰rÒí'Ë‰‘óÌa ÒÍ€”ÂóP¤E8•àª‘·&q5&3tÊD# €UýÌ_dã#Ÿ[R”û{È}	]&•“VËvràøßóœƒ"<€|Ö>Ú&ªPRŠF-¶ŒA9m9ˆtB&}„hùúð‡†n?ÒŒ`S*ÔÇÝ€|/ór÷RI¯ÀªNér±ˆH5' ³F—çüW¦4¢qsÉ¿äÍ-×6³Ð*Nü|”{>Áå¼æ£UCÁ'è,Àå˜ÄøêÖ*[ 0åÇÌ`ˆº¡Z`¿e²Ù+ë/"å†­xíö“‚í#FüÆp‡à!‹Ìœ0ÉˆœÂwªªUë~„nÞFË¨\o­Þ¡ÊËåFs#Þm÷Öâš¶µ¼–¿h@>˜¢<Ni45#ü7ZË×õÄÅÖòâò|£ÒøÍ=(åµ¼¦5ŽÞqL¦GG˜Xåxˆâ=Êø_G•åÕ·’FÏ#¾K­Fó¶¼V”ÖÖõÖr
-òZÚíÑŸ·Ò£‡ÊŠüx9–ŠÖbÈL£©Î‡k¸Ò·´í%¶oÖjÔ÷Ã[øbd<û@[+àhîþï€ÞÂ:Åã¾’?·Õ4ðÖA&þöýá,#î„%%£%«Éî=8½ù ;`]I`œ£o9!®ëðC{q[^âNÐÒ.·Övà%å{s{ñ÷B¹[f|ÍJf|Ír°²R,îÚ†¥];Š£ó½¥ðÀÒ­Šu)ÊÁÎ«ï·R”²YŒ”(î÷T³h§§¦ugéV•ŽQ‘WèS²ãdoQ¥ü;æ‹jUïQ?¿	¦PdÊ¿ÄÌhÊ]Ãò¬ÓïšÁá)Ÿ“¿L&h•ë>ÍrâbI©2xº+ÛèÕ—"]ÿOVËà}aŠÄ‹ï)P~¿MÃe“¹èCr‚ÁA~‹ª3Ìðy_š56æÂè`m²\Ã?—z(ƒ«š½S²GŠ›Jãâb·<¯·êçW¡âÍÆÕåÕnÝÝÙüfV@Õ·l,¨¨kôóÏÔhT·ìÜÙÖnª?2u÷ÄEuËØCÛß2·h*—"oxØRáÞ§»mêh4«=²ÕFmò/P­„/›×Í=¢Ë[ß²ûßPK   n‚~HYaò=	    Q  android-ndk-r11c/platforms/android-14/arch-arm/usr/include/machine/cpu-features.hUT	 üûVüûVux [I  ˆ  µXmoÛFþî_1­:;uç» HÚfC‰:’²ãö
-aE®$ž).Ã©Æõþû=³¤,)‘”äÃ†ø2³óºóÌ,ÏŸÑs2UþX$ÓYEÏÌSºxùòoÎ$Y\¨$&/—ª."IƒBý[F¯2Ò”ôª’
-YÊb!ã3¼g’/ã¤¬Šd\W‰ÊHd1Õ¥¤$£²ÃoÆI&ŠGš¨b^vh™T3R…¾ªZ+˜«8™$‘`…¤\ó¤ªdLy¡IŒ›j&*üHÈISµL²)E*‹^T²^7—Õ;¾ÿÂ´’ÔdeS¤bpÖew*[Yª«“Ú i!D™ª’HvÀ‘””B‹Y«ÕîmÛ¥Q*’¹,Îö…Y?ãÆýlÒV
-sÄ*ªç2«Ä*içÈ‡¥ ¹¨d‘ˆ´\^'ÄVÀ¦3«mÞ8ÞUxgø6á~à{·Že[Ô½Ñ&ÓÜûÎõMH7žkÙ~@FßÂÛ~è;Ýaèù‹ùÑ°øGM3ú÷døvç“Ó¸äAoôCÇ:äôMwh9ýëAõ½…¸NÏ	Áz­úË•ä]QÏöÍ<]ÇuÂ{­òÊ	ûPÇB® Ò á‡Ž9tŸCà6±–˜®áôlë6@/Ù·v?¤àÆp]Ö©KíÉcï®oûìÃ¦»Ôµa©ÑuíF¼µß6Cv«½c1ðq„n‡‚m:|c´á”áßwZ±ýÏ!˜@$Ëè×ðñÙ::,§ÐVt$sèÛ=¶!	†Ý tÂahÓµçY:ìíß:¦ü\¯‰‡ÝžÐÐê!î»ÃÀáÂìÐöýá t¼þ)r~‡ÁRK-)·××n#^žÏr9:º»±ñÞçðê¨˜ Ñ3Ã6m_üpÃ_êÛ×®sm÷M›©ºsûÉsfpÍwÔÃÖ+Þ+0¯¹ÝØÎ]r®È°n!ÆZ1c?N»}¼+–Í›6\çGÇÉ$‹å„F†ßõóÑ™ƒáèÊ6B„>Ýƒ!ÉäAž£óç¨óºÈð…¯Q`’¤ Û’*E­”R.d!RÔqT¨ðP ²s‰lÊ&‚²i"EUƒÒ ê\<2"ó Cc ÐB$©C:Èã:I-ÀRFT™•(¦²byO8ÀFá?V0ªÄX!¢
-M&…šëeQ$
-/à/E4K*ôÃ>ÕIñÐ@™Hó™C>P;_)@1#Ù¨Ûwt'i& “™¸U@3Æ2è,ë<WEˆPp,‡xd…‹×!ý SÃ!é˜@‚ÑˆÍ”Õó1Pp+l,”íf{¹HÊ¤‰ÂRž ãLUËÒêmM*J•z` ~@Øê,*fÜnb%Ëì¤Z¥lÓ
-^ZBšDNkY"žUë}ó¿±«6%“Vf¼I{çˆþúk'Í ¤‘þÛÅâóú=Ë{­fÚå½Õ4™î¶ëò€]—¿~Õ®Ëûíºüí–·<»háü:ÞïØeCÜçÙ›½’ß„Û†Ñn&û€ û×Ã¶½9lÛëððò×_YÎ«y­,
-@†.).Æ¶dÜ¡<•8Å³`[uÀAó$Kæõ¼QPÊMIÃì!SËŒq¨Îž$é¢› ÁKQ–“£ãæÂu,ÿÄ¼˜è‰&]AëŽ¹ˆ¢™Œœã2l,^ªâAªÎb=:òcSôQ•>®FS\HHl– Qg­¦ ¹þºhnŽ9Â”bûNO7éš¹is¸n_³©µ.ÔíJ=ÞxŽüÚ¥-ŽãÖæÌs/[Øki¡_g€Ù:jÆÀÆ¾mÙ¿ð®xRû¹TúšÓÏ×¼ß,Ú³Å¿a~±Å¶4îÈã– õf$ŽybÖ®îöíý^çºîÇVÕ¢éþ¶ŸèZæÅ^bÏôý+ƒ°!®]^§°õ–»ÐD.ätÅ=:®EtÈvÿ Õ÷MÚ6ðËbÊ½ºó|kÔº¡3pïi9Ã¹q&ÒÉRŒMZ%9êhÓ=|ðx0—ñ ²Šeï¨ÄŠŽþ]ò%Íoû}—ÿ_š÷5‡†ã\Ï°ó½vçòõ‹1šø\ÎšqªDÜŒ%e¥
-ëŸUê\O5‚r‘<•½ºÐ«
-9Å)IzZƒY5äÌ¦t’ÆE|¢Å BñÉ÷yø¹½_q/à1ÒÀÐWNxÓ³q¦a»U½†’’ASTºØ*9•Es¢âHD[©|GŸb`ü§XèKYù—ïsc§]_K•9ÒG$øC“')Ã6‰²L¦7v`còè)@õ4¥ØÍtîÀƒiïœ;Ìœ¿Ä2—ÍÀ§ø„^ÑK=ëNt|²í’$¸Ž	±<£®Ä)¾…âöl¾M?lmˆÐ	;:Ùëˆ+Z"¶ò];-òß\-ˆŠ—úý¥Â¨ÝjøåÃøOb†Õ€	c¤ˆ¹~6„`cœÞ)„y`–\}Iáw2AèxcokÃ®š&QÂsk6Õ§íÑB¤µ\Ef#Ä‰ÒZÇ0çô:;;ë€á¿ÜÖO`Œ¶íXM&¥¬>ßõ»ñ|Oòo×òí¨üòGK¾{»5Qp2ÆÚ-=1 ×2OE$õVRÜýrl0]å2ßŒÓ^.w;°aÖaû­^÷Éîmk÷ª|»[%$}C¨¬ýÚè™Hq"ÉùËâÑ¶âË+½Í“9¦=ÖºS¿}Ñë dýI	!\Î’hÖœ™P…þÂUW§ßëLcë.žXn¯›S¯ö«¡Ÿ~Ú`À<Âÿh·rPjîÛ^O[‹V'Ó¶Šú•8=k«ôP¨<œgù˜	|ÑGjŽs"ÛFŠúÔ¾½°^]l5™³oõ–‰ló>™¶5©”¥œÓÇ*"´ßÖÃ0VÝëº÷|$\H YüHKžµhtÚ¬¦hÑtŸ³µä=Æ}V£c©œC‚	\åüÍvW{ØÍöÂZ€FaNó4æËïüšš÷ð¼Û?,<×p©?!°Þ6Í•‰?lù¬¿)¬‰¾æ0çÿ PK   n‚~H7t1 ?  ƒ  K  android-ndk-r11c/platforms/android-14/arch-arm/usr/include/machine/setjmp.hUT	 üûVüûVux [I  ˆ  µVOâF=ï|ŠÚì&`ƒÇžñNNB[	 Vv|â×HV"Ô¸[²Çûé÷UKÂòLr\¶Ô]õªêÕ?ü@ÉUÇWíKê¹}ºG?JrŠT«,¥à(ŠT¥I+­þIÉZNž“Õ2¤¥‘úY¦g8ç«P¦™)u¶­ÊL$Š”*#)+ÈÔ0|²Í
-¡_i§ôÁè%+Iiû_UÖÀA¥Ù.KcHhIG©YYÊ”ŽZ=g)ÊGQâNž«—¬ØS¢Š4c%Ã(¬wåW~þÁ5Cj×ú”¨’•)N)à+£Š­zæ«† BT¨2Kä ™¡xófÖ†÷Þ'Mr‘¤>ûG`°ÃHëâL+8÷ÿñF–HURdQŠ6içÈ‡Â¦ƒ(¥ÎDnÞˆ·	ÃeÐ¦-ƒøÖ(
-fñ½z„çUÜùSoJ“\zä«‡Ð¿¹é6˜O½0"g9Åé2ýÉ:Âˆa~r"(ÿdïœåy¿¯B/Š(É_¬æ>ð` t–±ïEò—î|=õ—7-ƒ˜AæþÂ!kúGM
-f´ðB÷¯ÎÄŸûñƒ59óã%Ì1È&Z9aì»ë¹Òj®‚È#ŽoêGîÜñÞô>À.ywÞ2¦èÖ™ÏÙ¦mµSÄÁýÒ9†n¸4ñà©3™{µ-D;õCÏ9¬æ‰a#x„ŸóE+ÏõùÁûÝCPNø0h`#ï?ká’¦ÎÂ¹AŒ½7v§!è;H’»½ûJ¢õ$Šýx{tSK{ä…w¾ëE¿Ð<¨™à:ò°;Ö<P@$ð<YG>S·c/×«Ø–}äüÁSªS;R@w°´aƒ¯ |`\æÃfc@÷·ÎC¦×²æ01ØsãŽ˜õ'D,aÜ‰—–ÞÍÜ¿ñ–®Ç·Ýû‘×GòüˆüÚò½³ë¸‰ŠkîÕrØì’?#gz˜i+Œzˆü¦|‚£Dk÷¶I wÆù‡ç¶="yÌ
-yndùÇáxöøµ=¡Tbä¦hEªï†Zæ‚Ç^Vðpm“Y(ÚüŠzYÚŸ»Ødÿ•<Aq³­v<YrUì<SÅ£ž­¯õÐxy%yö¾ª
-m±¾ÕRüiÑÀ)ý³mç7áD¤¡V+¥00»r»*&Ú4\ÍQ&<¿éQŠTjF°ÃúEðÂ8æ"A@ÛÆUÈ: ¥rÇ4AÑçK£“$J§<½JU;.ÈqVnt[Ø!ð¤È_©¼ñ,k³Ýñ§å³Jjóµ‰û;‚H_õø²=¼›­ì\»¦ã+¢ž‘à«gãÕÙøìâlÜoeù¶°dÆŸ‡æÓ˜zµî€ž.‡O_úõHßb‹µë’D¢•BµÕØyû„–ˆ<7¿¼ùJf44ð£—Ž†é@Ž†OŸúˆÝf³¸~‚êñHDÁ·ØÂ)ï:
-c˜¡÷–<ÃùÇÞ«tQsdª¼´KÉ”Ðú ™«´²“(, ôÏ:¤  e
-ž®‡Oã«þ€²]íç)U'°¿ó¾]!4[EnH6•¨™þ¸™gÛ0¨A¾€ŸøPªQª»‚¿`²Þp]b7U	‚û¾3Ð2ªD¯°œ=£Ål¸•ÖÜ|¹@Gà£è ^)yÅÞ~ÂØjª¬ßVÐj“ƒIí/•&ÑÙ‘ë…EFõéAìÑÔ})ªÃ¶nq}l²ýA˜?O/€=è1[6…vùnêá@ç´áþÆ#$]ÔŠ»\‰r³†]²ÿº=ìTJ”™G•ZÕñuG‰/eó‚šUÆ	§UýUŒR«ügþ]—/:ªµ}2Î‡]Ûú’m£å¬íO5C§Þx÷‚lèL²Žâ‘£h¯Õ‹UûÜ6,Ö˜÷µuÛnÅ/Ÿñkó”a²~€Ø¢þ®:Õ"j­ã^=%F'¦WznJxßŸu=µŸ˜õÏ7ùS¯¤ëáöä‰Ùãöj†ug¸m°|·Q½»‰ü›…ýV7ïIôgŒ›®Ôl8ñfâ`7ÕRÚ_ËE±ƒÞûNñgê¯†×Pùxñ^ËB¯ïjY¶ðc(›MäÅ¿.Vÿ}»¼ør½»þBè{™ñ‡ÿPK   n‚~H?¡Â  –  K  android-ndk-r11c/platforms/android-14/arch-arm/usr/include/machine/_types.hUT	 üûVüûVux [I  ˆ  µWÛRÛH}6_ÑUI%@9v$KHíÖÊ²0SeK^] <)BáÙèâ’F&ì×o÷HÆ’qBöa©2ŒgNŸîsf¤†Ç½×ÖŠgcgr¾|\ñr°ì¯a48…“÷ï?ßŸGg0:¿\|8‡TäßWðºw<<8¿;€cÐóÕc!î—Ã#}úô¾O¿Oq­ç.9Øüžg²„<‰_½L¬yQ
-ùH3zˆ8/2 ´$ÅTBÁK^¬y4@JbóH”²w•yAAUr”yU„\ÍÜ‰,(ùÒ²B.!/Ôß¼’Ä’æ‘ˆEG‚‚ÃŠ©’G°*òµˆp —T•Æy’ä"»‡0Ï"AA%±P\ÊåGƒÒ”Î¦¦0Y•åÈ k%Öà._ÓRc‘àO–Kò>"D		òÍ6­’×­	“†I R^Gpò¼LØrdSêŒ*,îÿ©j•S”‡UŠ›l6mˆû‘ãzi y!‚¤Ü¯6ŒˆÛ2”¸Ó˜\¨8ZÏ‚”ï9NY¾]VÛ ð aÝ5W^”MUiðwœÎêÈg®q:*XJšKµGax
-!Æ…Ú2åž€†«9\P®xHGC¹‚UV¯²ltPŒ{Åp¬K÷F³ÀñÂ¶®ÙÄ˜Àø°©aºhætËtm6ö\ËvàëWÍÁ€·oi‰¨4óŒ/Ûp°l`óÅŒ!Ûšé2Ãé3õ™7aæ´È¦åÂŒÍ™‹0×êS>"z	Ö%Ì[¿Â¯Ú˜Í˜{«
-ºd®Ié.1ŸÍv™îÍ4ž½°ÅFº&ÌÑg›|¬™‰‰Á¸FYà\i³YG'2udŽ,QÏ—Êƒ2'Ì6t—ôlG:º†ÕÍúà,ÑÀøb Í¾í7´Žñ—‡ \$¶‰6×¦(îð[pKtÏ6æT0áxcÇe®ç0µ¬‰CTHïö5Óç3Ì,G9æ9F“¸šJ,h.ãxì9LÇL×°moá2Ë<"¢+ëÁb5Œž(“-SiF“,û–xÉµ}¸¹2pÞ&O•kyá {ºKl-$fE?Ý–X0éŒ¡ëºA«Ý0Ç8Â-cXùF»U=%Ÿ6k«‡­ÃÛW[
-ì´É5£â0‡5‡Æº$&ÇÓ¯÷›ç ÷çá«£¦ãôÎ±ßŽyñ'ü[ÈðÃðÓÙd¥P˜“.æ¬Æ`z%â,â1øš=÷}÷va8þ•ð
-çDÆw§±mÁoƒÑù`4a3BùîADøæ™ÄN…¯ªŠˆi€=ß/Å}†op=üŠÈs_~~TÙ ÚE”Ë¼½&vôqopƒ©£»œØŸžìVˆ:´F Ê™eNéÓÖ’äøº¦_ÝÇ³Ÿ€ŸØ·QuŠ:ªåä	ÌE&Ò*}ÙËÚš&½Ÿð ìZõäÞFÏ^LcQ‡¦ëÙÖÇ.Ñ.ªq¬ÃÔ5ykk—iÕÓaªê2m@Õªåç)\â4ÇÖ›þ_Û:âý¾vTÄ{}ÝeÙgë3š\ÅÔøeOã_±4Þçè°Žwa°
-îuXæID·˜üîoJXåärÑ±g`ó®dñ£G654˜Vþ0-x@[úK[Ùß.¸P2¼kãÝ	YKño‘BgGŠµ‰ºžCùˆé³b ó
- ØuEmýÏ«kªîç•çH¼9EôÃ"7¯Ç0ÉÃomÞÎ‚ˆÚKu&J%ü§ Þ÷º•x£ÝGGóJ!v¨»LtèûSÓÓ}ÿÞ¼Íøãw8mmÝ]%)2tÑ§‹µòS‹'%‚R'ÁØë"ð
-+KnðÂ¬º¶/ÚíjµÂæ±uæ©%úá*©Jú<S÷@ñþ–wWå=K{\)ª¬íJo‹¨)õ!”öë¯â¤ÚÕ:e•t»3Õþ/PK   n‚~H_ãÝ  
-  K  android-ndk-r11c/platforms/android-14/arch-arm/usr/include/machine/limits.hUT	 üûVüûVux [I  ˆ  µV]oêF}&¿b¤\é’ˆËw€Ðªª1›°’±¹^;}á:ö¶5vj›$ô×wf1	„¨íK‘¢,;{ÎÌ93^Ó8¯|qžd2ã!Äj¥Š¼¾¬=C«Þv³Ùk4[fÚíaw0ìö`¥âXf°×'øR9oœ4À–Å1¾KøN£Ùm´Ðî[½ak ¿/Û­w4ÂOàÌôi“©ÇeÕðZ—ƒxK	®|”I‘Cº€¿ú‰z–Y®Ší˜A¬i–¨ NFƒ¦È!“¹ÌžeDûre¤ò"SëB¥	Ië\‚J O×Y(õÎƒJ‚lÈ¸Êkð¢Š%¤™þŸ®bY¥‘Z¨0 Ž™„'™¡ÞBFð”¥Ï*ÂE±
-]ë"ãôE%¦I¤”áV²ÒºUÿPšVZÖ¦ž\çÊ)¬•Xƒ‡ô™B¥[D‚Ÿ$-T(kxBåØ„ Í{Z-ï°&LÆZÉL{×>.î9²+uFk,îÿ©¶*K¦(×+l°kZû‘b<ƒUPÈLqþn¼nïËÐâ:u°¥Ò8Š'ÁJ~2PIúÖmÀA¦º·\i–—U­‚<HšÔ‘‚L"ŒI,e•¶!:Âq
-a­yº(^pJ®r¸ ’!BÍ\FC•lÇ+ÏK„ñ&\€p®¼[Ãe€ë™ëÜð1Ãèƒ\vÍlO€aÁtlÏå#ßs\?~_¿RH?.ö=°»™Ë„ Ç>YyØ5l3Qn›–?æöulÇ‹O¹‡Ç<§Fùˆè	ÎL™kNð«1â÷î
+	 * @since 4.5.0
+	 * @type {number|null}
+	 * @private
+	 */
+	self._debouncedTimeoutId = null;
+
+	/**
+	 * Current jqXHR for the request to the partials.
+	 *
+	 * @since 4.5.0
+	 * @type {jQuery.jqXHR|null}
+	 * @private
+	 */
+	self._currentRequest = null;
+
+	/**
+	 * Request full page refresh.
+	 *
+	 * When selective refresh is embedded in the context of front-end editing, this request
+	 * must fail or else changes will be lost, unless transactions are implemented.
+	 *
+	 * @since 4.5.0
+	 */
+	self.requestFullRefresh = function() {
+		api.preview.send( 'refresh' );
+	};
+
+	/**
+	 * Request a re-rendering of a partial.
+	 *
+	 * @since 4.5.0
+	 *
+	 * @param {wp.customize.selectiveRefresh.Partial} partial
+	 * @return {jQuery.Promise}
+	 */
+	self.requestPartial = function( partial ) {
+		var partialRequest;
+
+		if ( self._debouncedTimeoutId ) {
+			clearTimeout( self._debouncedTimeoutId );
+			self._debouncedTimeoutId = null;
+		}
+		if ( self._currentRequest ) {
+			self._currentRequest.abort();
+			self._currentRequest = null;
+		}
+
+		partialRequest = self._pendingPartialRequests[ partial.id ];
+		if ( ! partialRequest || 'pending' !== partialRequest.deferred.state() ) {
+			partialRequest = {
+				deferred: $.Deferred(),
+				partial: partial
+			};
+			self._pendingPartialRequests[ partial.id ] = partialRequest;
+		}
+
+		// Prevent leaking partial into debounced timeout callback.
+		partial = null;
+
+		self._debouncedTimeoutId = setTimeout(
+			function() {
+				var data, partialPlacementContexts, partialsPlacements, request;
+
+				self._debouncedTimeoutId = null;
+				data = self.getCustomizeQuery();
+
+				/*
+				 * It is key that the containers be fetched exactly at the point of the request being
+				 * made, because the containers need to be mapped to responses by array indices.
+				 */
+				partialsPlacements = {};
+
+				partialPlacementContexts = {};
+
+				_.each( self._pendingPartialRequests, function( pending, partialId ) {
+					partialsPlacements[ partialId ] = pending.partial.placements();
+					if ( ! self.partial.has( partialId ) ) {
+						pending.deferred.rejectWith( pending.partial, [ new Error( 'partial_removed' ), partialsPlacements[ partialId ] ] );
+					} else {
+						/*
+						 * Note that this may in fact be an empty array. In that case, it is the responsibility
+						 * of the Partial subclass instance to know where to inject the response, or else to
+						 * just issue a refresh (default behavior). The data being returned with each container
+						 * is the context information that may be needed to render certain partials, such as
+						 * the contained sidebar for rendering widgets or what the nav menu args are for a menu.
+						 */
+						partialPlacementContexts[ partialId ] = _.map( partialsPlacements[ partialId ], function( placement ) {
+							return placement.context || {};
+						} );
+					}
+				} );
+
+				data.partials = JSON.stringify( partialPlacementContexts );
+				data[ self.data.renderQueryVar ] = '1';
+
+				request = self._currentRequest = wp.ajax.send( null, {
+					data: data,
+					url: api.settings.url.self
+				} );
+
+				request.done( function( data ) {
+
+					/**
+					 * Announce the data returned from a request to render partials.
+					 *
+					 * The data is filtered on the server via customize_render_partials_response
+					 * so plugins can inject data from the server to be utilized
+					 * on the client via this event. Plugins may use this filter
+					 * to communicate script and style dependencies that need to get
+					 * injected into the page to support the rendered partials.
+					 * This is similar to the 'saved' event.
+					 */
+					self.trigger( 'render-partials-response', data );
+
+					// Relay errors (warnings) captured during rendering and relay to console.
+					if ( data.errors && 'undefined' !== typeof console && console.warn ) {
+						_.each( data.errors, function( error ) {
+							console.warn( error );
+						} );
+					}
+
+					/*
+					 * Note that data is an array of items that correspond to the array of
+					 * containers that were submitted in the request. So we zip up the
+					 * array of containers with the array of contents for those containers,
+					 * and send them into .
+					 */
+					_.each( self._pendingPartialRequests, function( pending, partialId ) {
+						var placementsContents;
+						if ( ! _.isArray( data.contents[ partialId ] ) ) {
+							pending.deferred.rejectWith( pending.partial, [ new Error( 'unrecognized_partial' ), partialsPlacements[ partialId ] ] );
+						} else {
+							placementsContents = _.map( data.contents[ partialId ], function( content, i ) {
+								var partialPlacement = partialsPlacements[ partialId ][ i ];
+								if ( partialPlacement ) {
+									partialPlacement.addedContent = content;
+								} else {
+									partialPlacement = new Placement( {
+										partial: pending.partial,
+										addedContent: content
+									} );
+								}
+								return partialPlacement;
+							} );
+							pending.deferred.resolveWith( pending.partial, [ placementsContents ] );
+						}
+					} );
+					self._pendingPartialRequests = {};
+				} );
+
+				request.fail( function( data, statusText ) {
+
+					/*
+					 * Ignore failures caused by partial.currentRequest.abort()
+					 * The pending deferreds will remain in self._pendingPartialRequests
+					 * for re-use with the next request.
+					 */
+					if ( 'abort' === statusText ) {
+						return;
+					}
+
+					_.each( self._pendingPartialRequests, function( pending, partialId ) {
+						pending.deferred.rejectWith( pending.partial, [ data, partialsPlacements[ partialId ] ] );
+					} );
+					self._pendingPartialRequests = {};
+				} );
+			},
+			api.settings.timeouts.selectiveRefresh
+		);
+
+		return partialRequest.deferred.promise();
+	};
+
+	/**
+	 * Add partials for any nav menu container elements in the document.
+	 *
+	 * This method may be called multiple times. Containers that already have been
+	 * seen will be skipped.
+	 *
+	 * @since 4.5.0
+	 *
+	 * @param {jQuery|HTMLElement} [rootElement]
+	 * @param {object}             [options]
+	 * @param {boolean=true}       [options.triggerRendered]
+	 */
+	self.addPartials = function( rootElement, options ) {
+		var containerElements;
+		if ( ! rootElement ) {
+			rootElement = document.documentElement;
+		}
+		rootElement = $( rootElement );
+		options = _.extend(
+			{
+				triggerRendered: true
+			},
+			options || {}
+		);
+
+		containerElements = rootElement.find( '[data-customize-partial-id]' );
+		if ( rootElement.is( '[data-customize-partial-id]' ) ) {
+			containerElements = containerElements.add( rootElement );
+		}
+		containerElements.each( function() {
+			var containerElement = $( this ), partial, placement, id, Constructor, partialOptions, containerContext;
+			id = containerElement.data( 'customize-partial-id' );
+			if ( ! id ) {
+				return;
+			}
+			containerContext = containerElement.data( 'customize-partial-placement-context' ) || {};
+
+			partial = self.partial( id );
+			if ( ! partial ) {
+				partialOptions = containerElement.data( 'customize-partial-options' ) || {};
+				partialOptions.constructingContainerContext = containerElement.data( 'customize-partial-placement-context' ) || {};
+				Constructor = self.partialConstructor[ containerElement.data( 'customize-partial-type' ) ] || self.Partial;
+				partial = new Constructor( id, partialOptions );
+				self.partial.add( partial );
+			}
+
+			/*
+			 * Only trigger renders on (nested) partials that have been not been
+			 * handled yet. An example where this would apply is a nav menu
+			 * embedded inside of a navigation menu widget. When the widget's title
+			 * is updated, the entire widget will re-render and then the event
+			 * will be triggered for the nested nav menu to do any initialization.
+			 */
+			if ( options.triggerRendered && ! containerElement.data( 'customize-partial-content-rendered' ) ) {
+
+				placement = new Placement( {
+					partial: partial,
+					context: containerContext,
+					container: containerElement
+				} );
+
+				$( placement.container ).attr( 'title', self.data.l10n.shiftClickToEdit );
+				partial.createEditShortcutForPlacement( placement );
+
+				/**
+				 * Announce when a partial's nested placement has been re-rendered.
+				 */
+				self.trigger( 'partial-content-rendered', placement );
+			}
+			containerElement.data( 'customize-partial-content-rendered', true );
+		} );
+	};
+
+	api.bind( 'preview-ready', function() {
+		var handleSettingChange, watchSettingChange, unwatchSettingChange;
+
+		_.extend( self.data, _customizePartialRefreshExports );
+
+		// Create the partial JS models.
+		_.each( self.data.partials, function( data, id ) {
+			var Constructor, partial = self.partial( id );
+			if ( ! partial ) {
+				Constructor = self.partialConstructor[ data.type ] || self.Partial;
+				partial = new Constructor(
+					id,
+					_.extend( { params: data }, data ) // Inclusion of params alias is for back-compat for custom partials that expect to augment this property.
+				);
+				self.partial.add( partial );
+			} else {
+				_.extend( partial.params, data );
+			}
+		} );
+
+		/**
+		 * Handle change to a setting.
+		 *
+		 * Note this is largely needed because adding a 'change' event handler to wp.customize
+		 * will only include the changed setting object as an argument, not including the
+		 * new value or the old value.
+		 *
+		 * @since 4.5.0
+		 * @this {wp.customize.Setting}
+		 *
+		 * @param {*|null} newValue New value, or null if the setting was just removed.
+		 * @param {*|null} oldValue Old value, or null if the setting was just added.
+		 */
+		handleSettingChange = function( newValue, oldValue ) {
+			var setting = this;
+			self.partial.each( function( partial ) {
+				if ( partial.isRelatedSetting( setting, newValue, oldValue ) ) {
+					partial.refresh();
+				}
+			} );
+		};
+
+		/**
+		 * Trigger the initial change for the added setting, and watch for changes.
+		 *
+		 * @since 4.5.0
+		 * @this {wp.customize.Values}
+		 *
+		 * @param {wp.customize.Setting} setting
+		 */
+		watchSettingChange = function( setting ) {
+			handleSettingChange.call( setting, setting(), null );
+			setting.bind( handleSettingChange );
+		};
+
+		/**
+		 * Trigger the final change for the removed setting, and unwatch for changes.
+		 *
+		 * @since 4.5.0
+		 * @this {wp.customize.Values}
+		 *
+		 * @param {wp.customize.Setting} setting
+		 */
+		unwatchSettingChange = function( setting ) {
+			handleSettingChange.call( setting, null, setting() );
+			setting.unbind( handleSettingChange );
+		};
+
+		api.bind( 'add', watchSettingChange );
+		api.bind( 'remove', unwatchSettingChange );
+		api.each( function( setting ) {
+			setting.bind( handleSettingChange );
+		} );
+
+		// Add (dynamic) initial partials that are declared via data-* attributes.
+		self.addPartials( document.documentElement, {
+			triggerRendered: false
+		} );
+
+		// Add new dynamic partials when the document changes.
+		if ( 'undefined' !== typeof MutationObserver ) {
+			self.mutationObserver = new MutationObserver( function( mutations ) {
+				_.each( mutations, function( mutation ) {
+					self.addPartials( $( mutation.target ) );
+				} );
+			} );
+			self.mutationObserver.observe( document.documentElement, {
+				childList: true,
+				subtree: true
+			} );
+		}
+
+		/**
+		 * Handle rendering of partials.
+		 *
+		 * @param {api.selectiveRefresh.Placement} placement
+		 */
+		api.selectiveRefresh.bind( 'partial-content-rendered', function( placement ) {
+			if ( placement.container ) {
+				self.addPartials( placement.container );
+			}
+		} );
+
+		/**
+		 * Handle setting validities in partial refresh response.
+		 *
+		 * @param {object} data Response data.
+		 * @param {object} data.setting_validities Setting validities.
+		 */
+		api.selectiveRefresh.bind( 'render-partials-response', function handleSettingValiditiesResponse( data ) {
+			if ( data.setting_validities ) {
+				api.preview.send( 'selective-refresh-setting-validities', data.setting_validities );
+			}
+		} );
+
+		api.preview.bind( 'edit-shortcut-visibility', function( visibility ) {
+			api.selectiveRefresh.editShortcutVisibility.set( visibility );
+		} );
+		api.selectiveRefresh.editShortcutVisibility.bind( function( visibility ) {
+			var body = $( document.body ), shouldAnimateHide;
+
+			shouldAnimateHide = ( 'hidden' === visibility && body.hasClass( 'customize-partial-edit-shortcuts-shown' ) && ! body.hasClass( 'customize-partial-edit-shortcuts-hidden' ) );
+			body.toggleClass( 'customize-partial-edit-shortcuts-hidden', shouldAnimateHide );
+			body.toggleClass( 'customize-partial-edit-shortcuts-shown', 'visible' === visibility );
+		} );
+
+		api.preview.bind( 'active', function() {
+
+			// Make all partials ready.
+			self.partial.each( function( partial ) {
+				partial.deferred.ready.resolve();
+			} );
+
+			// Make all partials added henceforth as ready upon add.
+			self.partial.bind( 'add', function( partial ) {
+				partial.deferred.ready.resolve();
+			} );
+		} );
+
+	} );
+
+	return self;
+}( jQuery, wp.customize ) );

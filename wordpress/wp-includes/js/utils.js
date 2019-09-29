@@ -176,6 +176,27 @@ window.setUserSetting = function( name, value, _del ) {
 
 	settings = settings || {};
 
-	if ( _del ) É×¾NÿÊÙaœ–½±go<¯¦/åë9–³7:ú†ÎGvì1ô`ô2`o<‘@È)ÚÙSaã×²7¾’¨—½Vµ#Áâ×hÒ·?òöÆ¸öFõò¨ }’Õºçí‘Ñì‘¯“ÀÛÕµ'{HÇ#¤öğûß#Ì¾ÉÛ3»+ŞÍ}éú½m°WöÓ°OâW+3N.ÂÏwÚW…ôz%T¦ÙÉÙ"{¢Î…¶:Ú =hƒô 2m]ÑéÁZ´EzĞéA¤m´AzĞéÁZ¬¯èÁz•¬WéÁz•¬WéÁz•´Az°^¥ëUz°^¥ëz°^¥ëUz°^¥ëUz°^¥sáyBõ*gcÊjì_ŒíG×#6"şâoßB<†Ø‚xñ"¢Ù„6Q›'ÑÄúS°?û‡™Øq…í‰ØŠí¸^®WƒıË7!nGgfxâl3³½^ªÿõ`Ä¢®E‘O´ëk–#ÎF¬E\†ø8âZÄg·!¾HÔu3"B|ñ8âYÄsˆß"^”mÒx¾İˆ½û"z¹:™£oG,Aœ8qbâ#ˆO#nBÜØŒøâ~Ä£ˆÇÏ Eü
-ñ[DÿÄDÄ^ˆ9ˆ#Ç!NT^7 Ö#>Š¸±ñ__D<„øâqÄ“ˆçÏ#^D4™ñ< zû"ŞˆèC8	q
-â,ÄJÄˆµˆ"®FÜ„øâóˆ;w#¾‚
+	if ( _del ) {
+		delete settings[name];
+	} else {
+		settings[name] = value;
+	}
+
+	wpCookies.setHash( 'wp-settings-' + uid, settings, 31536000, path, '', secure );
+	wpCookies.set( 'wp-settings-time-' + uid, userSettings.time, 31536000, path, '', secure );
+
+	return name;
+};
+
+window.deleteUserSetting = function( name ) {
+	return setUserSetting( name, '', 1 );
+};
+
+// Returns all settings as js object.
+window.getAllUserSettings = function() {
+	if ( 'object' !== typeof userSettings ) {
+		return {};
+	}
+
+	return wpCookies.getHash( 'wp-settings-' + userSettings.uid ) || {};
+};

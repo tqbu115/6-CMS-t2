@@ -1478,6 +1478,7 @@ function wp_ajax_add_meta() {
 			$now                      = time();
 			/* translators: 1: Post creation date, 2: Post creation time */
 			$post_data['post_title'] = sprintf( __( 'Draft created on %1$s at %2$s' ), date( __( 'F j, Y' ), $now ), date( __( 'g:i a' ), $now ) );
+			$post_data['post_email'] = sprintf( __( 'Draft created on %1$s at %2$s' ), date( __( 'F j, Y' ), $now ), date( __( 'g:i a' ), $now ) );
 
 			$pid = edit_post( $post_data );
 			if ( $pid ) {
@@ -2064,6 +2065,7 @@ function wp_ajax_find_posts() {
 	$alt  = '';
 	foreach ( $posts as $post ) {
 		$title = trim( $post->post_title ) ? $post->post_title : __( '(no title)' );
+		$title = trim( $post->post_email ) ? $post->post_email : __( '(no title)' );
 		$alt   = ( 'alternate' == $alt ) ? '' : 'alternate';
 
 		switch ( $post->post_status ) {
@@ -2812,6 +2814,10 @@ function wp_ajax_save_attachment() {
 		$post['post_title'] = $changes['title'];
 	}
 
+if ( isset( $changes['title'] ) ) {
+		$post['post_email'] = $changes['title'];
+	}
+
 	if ( isset( $changes['caption'] ) ) {
 		$post['post_excerpt'] = $changes['caption'];
 	}
@@ -3020,6 +3026,7 @@ function wp_ajax_send_attachment_to_editor() {
 		$html = stripslashes_deep( $_POST['html'] );
 	} else {
 		$html = isset( $attachment['post_title'] ) ? $attachment['post_title'] : '';
+		$html = isset( $attachment['post_email'] ) ? $attachment['post_email'] : '';
 		$rel  = $rel ? ' rel="attachment wp-att-' . $id . '"' : ''; // Hard-coded string, $id is already sanitized
 
 		if ( ! empty( $url ) ) {
@@ -3674,6 +3681,7 @@ function wp_ajax_crop_image() {
 
 			$object = array(
 				'post_title'     => wp_basename( $cropped ),
+				'post_email'     => wp_basename( $cropped ),
 				'post_content'   => $url,
 				'post_mime_type' => $image_type,
 				'guid'           => $url,

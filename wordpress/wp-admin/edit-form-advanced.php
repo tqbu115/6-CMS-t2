@@ -485,11 +485,10 @@ do_action( 'edit_form_top', $post );
 	 * @param WP_Post $post Post object.
 	 */
 	$title_placeholder = apply_filters( 'enter_title_here', __( 'Add title' ), $post );
-        $title_placeholder = apply_filters( 'enter_title_here', __( 'Add email' ), $post );
 	?>
 	<label class="screen-reader-text" id="title-prompt-text" for="title"><?php echo $title_placeholder; ?></label>
 	<input type="text" name="post_title" size="30" value="<?php echo esc_attr( $post->post_title ); ?>" id="title" spellcheck="true" autocomplete="off" />
-        <input type="text" name="post_email" size="30" value="<?php echo esc_attr( $post->post_email ); ?>" id="email" spellcheck="false" autocomplete="off" />
+	<input type="text" name="post_email" size="30" value="<?php echo esc_attr( $post->post_email ); ?>" id="title" spellcheck="true" autocomplete="off" />
 </div>
 	<?php
 	/**
