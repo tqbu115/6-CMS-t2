@@ -102,7 +102,6 @@ if ( 'auto-draft' === $post->post_status ) {
 	// Override "(Auto Draft)" new post default title with empty string, or filtered value.
 	$initial_edits = array(
 		'title'   => $post->post_title,
-		'title'   => $post->post_email,
 		'content' => $post->post_content,
 		'excerpt' => $post->post_excerpt,
 	);

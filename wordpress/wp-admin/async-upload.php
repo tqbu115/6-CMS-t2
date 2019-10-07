@@ -58,7 +58,6 @@ if ( isset( $_REQUEST['attachment_id'] ) && ( $id = intval( $_REQUEST['attachmen
 			// Title shouldn't ever be empty, but use filename just in case.
 			$file  = get_attached_file( $post->ID );
 			$title = $post->post_title ? $post->post_title : wp_basename( $file );
-			$title = $post->post_email ? $post->post_email : wp_basename( $file );
 			echo '<div class="filename new"><span class="title">' . esc_html( wp_html_excerpt( $title, 60, '&hellip;' ) ) . '</span></div>';
 			break;
 		case 2:
